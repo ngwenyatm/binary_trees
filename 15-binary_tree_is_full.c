@@ -20,7 +20,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	{
 		int full_left = binary_tree_is_full(tree->left);
 		int full_right = binary_tree_is_full(tree->right);
-		
+
 		if (full_left == 0 || full_right == 0)
 		{
 			return (0);
